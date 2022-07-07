@@ -26,7 +26,7 @@ def postInput():
     x6=insertValues['R']
     x7=insertValues['EL']
     x8=insertValues['phi_1']
-    x9=insertValues['Z1.0']
+    x9=insertValues['Z1']
     input = np.array([[x1, x2, x3, x4, x5, x6, x7, x8, x9]])
     # 進行預測
     result = model.predict(input)
