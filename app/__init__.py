@@ -8,11 +8,6 @@ from flask_cors import CORS
 app = Flask(__name__)
 CORS(app)
 
-@app.route('/test', methods=['GET'])
-def getResult():
-    input = np.array([[5.7, 195.65, 128.0876, 0.0005,161,12.837,30,99,202 ]])
-    result = model.predict(input)
-    return jsonify({'result': str(result)})
 
 @app.route('/predict', methods=['POST'])
 def postInput():
