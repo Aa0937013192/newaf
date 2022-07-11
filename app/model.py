@@ -2,8 +2,8 @@
 import pickle
 import gzip
 
-# 載入Model
-with gzip.open('app/model/xgboost-PGA.pgz', 'r') as f:
+#讀取Model
+with open('./xgboost-1.pickle', 'rb') as f:
     xgboostModel = pickle.load(f)
 
 
